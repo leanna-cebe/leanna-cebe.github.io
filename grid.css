@@ -1,0 +1,119 @@
+/*float fix */
+.row:before,
+.row:after {
+content: " ";
+display: table;
+}
+.row:after {
+clear: both;
+}
+
+
+
+.container {
+	width:  1440px;
+	margin: 0 auto;
+
+}
+
+.container-fluid {
+	width: 100%;
+	background-color:#90fcf9;
+}
+
+.row{
+	margin-bottom: 30px;
+
+
+}
+
+* {
+		  box-sizing: border-box;
+		}
+
+		/* Create three equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 33.33%;
+		  padding: 10px;
+		  
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+
+.col-1 {
+	width: 67.5px;
+	float: left;
+}
+
+.col-2 {
+	width: 165px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-3 {
+	width: 262.5px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-4 {
+	width: 360px;
+	margin: 0 15px;
+	padding-top: 20px;
+	float: left;
+}
+
+.col-5 {
+	width: 457.5px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-6 {
+	width: 555px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-7 {
+	width: 652.5px;
+	margin: 0 15px;
+	float: left;
+}
+.col-8 {
+	width: 750px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-9 {
+	width: 847.5px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-10 {
+	width: 945px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-11 {
+	width: 1042.5px;
+	margin: 0 15px;
+	float: left;
+}
+
+.col-12 {
+	width: 1140px;
+	margin: 0 15px;
+	float: left;
+}
