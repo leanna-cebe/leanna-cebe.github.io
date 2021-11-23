@@ -1,294 +1,163 @@
 <!DOCTYPE HTML>
-
-<html lang=“en”>
+<html lang=en>
 
 <head>
 
-<title>
-	Fez falls into another dimension
-</title>
-
 </head>
+<meta charset="utf-8">
 
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="grid.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
 
-<header class="container">
-			<div class="row"> 
-				<div class="col-1"> 
-					<a href="index.html"> 
-						<img id="website-logo" src="website-logo.png">
-					</a>
-				</div>
 
-<nav> 
+<body>
 
-		<ul>
-		<div class="topnav">
-  			<li><a class="active" href="index.html">Home</a></li>
-  			<li><a href="about.html">About</a></li>
+<section class="navigation">
 
-  			<!--
-  			<li><a href="news.html">News</a></li>
-  			<li><a href="shop.html">Shop</a></li>
-  		-->
-  				<div class="search-container">
-  					<form action="/action_page.php">
-  						<input type="text" placeholder="Search..">
-  						<button type="submit"><i class="fa fa-search"></i></button>
- 					</form>
- 		</ul>
- 				</div>		
-  		</div>
-
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="forest" >The Forest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Orbs</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Creatures
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Fairies</a></li>
+            <li><a class="dropdown-item" href="#">Elves</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Dragons</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" id="search-button" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
 </nav>
 
-</header>
-
-<body style="background-color: #000000;">
-
-
-	<div id="earth">
- 
- <!-- <img src="cloud-top.png" alt="cloud">  -->
-
-	<div id="cloud">
-
-	<img src="cloud-top.png" alt="cloud">
-
-</div>
- 
- <img id=pending src="pending.gif" alt="pending">
-
-
- 	 <img id=fez1 src="fez.png" alt="fez1" class="rotate90">
-
-
-	<img id=fez2 src="fez.png" alt="fez2">
-
-<h2 id="text1"> *rumble* *rumble* <br>
-
-	A gap emerges from the storm and out comes a white figure
-</h2>
-
-	<img id="poof" src="poof.png" alt="explosion">
-
-	<h2 id="text2"> *poof* <br>
-	That was strange, I must've fallen off the platform... but where am I?
-	</h2>
-
-
-</div>
-
-<div>
-		<img id="rain" src="rain.png" alt="rain">
-</div>
-
-<section>
-
-	<img id="ladder" src="ladder.png" alt="ladder">
-
 </section>
 
-<section>
 
-	<h2 id="text3"> 
-		A ladder... <br>
-		Where does this go? <br>
-		I guess I've fallen this far already..
-	</h2>
-
-	<img id="fez3" src="fez.png" alt="fez3">
-
-	<h2 id="text4">
-		Is this...the center of the world? <br>
-		There seems to be a tension in the connection...
-	</h2>
-
-<button class="button" id="button1" 
-
-	onclick="alert('CAREFUL! It seems the stem could break at any minute...')"
-
-	>poke</button>
-
-	</div>
-
-	<h2 id="text5"> I hope I didn't do any damage...<br>
-		I should continue on my journey
-	</h2>
-
-</section>
-
-<section>
-
-	<img id="ground1" src="platform1.png" alt="platform">
-	<img id="ground2" src="platform2.png" alt="platform">
-	<img id="ground3" src="fake-ground.png" alt="fake-ground">
-
-
-	<img id="fez4" src="fez.png" alt="fez4">
-
-
-	<img id="mochi" src="mochi.png" alt="mochi">
-
-	<h2 id="text6">
-		Is that food? <br>
-		oh good, I'm starved... <br>
-		Wheres the--Ahhhh!!!
-	</h2>
-
-	<img id="fez5" src="fez.png" alt="fez5" class="rotate90">
-
-	<img id="vortex" src="https://media4.giphy.com/media/gdTSwfMfdqeLv6lw6w/giphy.gif?cid=ecf05e478td823vwyecr5630vj7451dqo2x4eonox0djo1on&rid=giphy.gif&ct=g" alt="vortex">
-
-	<hr id=line>
-
-<button onclick="location.href = 'interior.html';" class="button" id="button2">Continue... </button>
-
-<h2 id="text7"> What is this darkness?... I should return up </h2>
-
-<img id="glitch" src="glitch.png" alt="glitch">
-
-<img id="glitch2" src="glitch.png" alt="glitch2">
-
-
-<img id="error" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ab0c1e57515093.59d8c6eb16d19.gif" alt="error">
-
-<h2> ah thats what it is...<br>
-The weights holding the page down </h2>
-
-<img id="weight" src="weight.png" alt="weight">
-
-</section>
-
-</body>
-
-<!-- "Previous code"
-
-	<div class="container">
-	<div class="row">
-
-		<section class="col-5">
-	<h1>
-		HAS AI <br> GONE TOO FAR?
-	</h1>
-</section>
-
-	<section class="col-5">
-
-	<img src= "humanoid-robot.jpeg" alt="humanoid robot" width="670px" height="auto">
+	<section class="container">
+		<div class= "row">
+			<div class= "col">
+				<div class="panel"> 
+				<h1>
+				The Forest Awaits
+				</h1>
+			</div>
+			</div>
+		</div>
+		
 	</section>
 
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/dragon-egg.png" class="d-block w-100" id="dragon-egg" alt="dragon egg">
+    </div>
+    <div class="carousel-item">
+      <img src="images/baby-dragon.png" class="d-block w-100" id="baby-dragon"alt="baby dragon">
+    </div>
+    <div class="carousel-item">
+      <img src="images/dragon-big.png" class="d-block w-100" id="dragon-big" alt="dragon big">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-</div>
-</div>
-</section>
 
-
-<div>
-
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-
-<section class="container"> 
-			<div class="row">
-				<section class="col-12"> 
-				<center>
-					<h6>QUOTES FROM FANS</h1>
-				</center>
-					<p>REAL MESSAGES SENT IN FROM AROUND THE WORLD</p>
-				</section>
-			</div>
+	<section class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="panel">
+				 <h3>
+				<a href="#" class="learn-more" >Learn more</a>
+				  about the peculiar world that lurks in dreams and alternate realities.
+				</h3>
 			
-			<div class="row">
-				<section class="col-4">
-				<center>
-					<img src="person-icon.png" alt="person-icon"width="50" height="50">
-				</center>
-					<h2>Ken Goldberg</h2>
-					<p>We're fascinated with robots because they are reflections of ourselves.</p>
-				</section>
-		
-				<section class="col-4">
-				<center>
-					<img src="person-icon.png" alt="person-icon" width="50" height="50">	
-				</center>		
-					<h2>Ryuichi Sakamoto</h2>
-					<p>In Japanese culture, there is a belief that God is everywhere - in mountains, trees, rocks, even in our sympathy for robots or Hello Kitty toys.</p>
-				</section>
+			
 
-				<section class="col-4">
-				<center>
-					<img src="person-icon.png" alt="person-icon" width="50" height="50">
-				</center>				
-					<h2>Trevor Paglen</h2>
-					<p>Anything humans can do in space, robots can do better.</p>
-				</section>
+				</div>
 			</div>
-		</section>
+		</div>
 
-	<b> The news headlines are fake, do not believe a word they say. Accept the new world. They will bring a better life. </b>
+			<div class="mb-3">
+			  <label for="exampleFormControlInput1" class="form-label">Subscribe for Newletters & Events</label>
+			  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+			</div>
 
-<br>
+			<button type="button" id="sign-up" class="btn btn-dark">Sign Up</button>
 
-<center>
+	</section>
 
-
-	<button class="button button1" 
-
-	onclick="alert('Signed Up! ... We Just know...')"
-
-	>join the revolution</button>
-
-	</div>
-
-</center>
-
-<!—Eyes mods—>
-
-<!—Arm mods—>
-
-<!—Leg mods—>
+<footer></footer>
 
 </body>
 
--->
-
-<footer>
-
-<div>
-	<center>
-
-			<a href="https://www.facebook.com/"><img src="facebook-logo.png" width="50" height="50" alt="FaceBook"></a>
-
-			<a href="https://www.instagram.com/"><img src="instagram-logo.png" width="50" height="50" alt="Instagram"></a>
-
-			<a href="https://twitter.com/"><img src="twitter-logo.png" width="50" height="50" alt="Twitter"></a>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-	<br>
-			
-			<h3> Check Us Out on Social Media </h3>
+  </html>
 
- 	</center>
 
-</div>
+<!-- extra code
+  		<div class="row">
+			<div class="col-md-2">
+				<div class="panel"> 
+					
+				 </div>
 
-</footer>
+			</div>
+		</div>
 
-</html>
+		-->
+
+<!-- couldnt figure out how to work, saving for later 
+
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class= "col-1 col-sm-2" id=egg-small>
+		<div class="card">
+    	<img src="images/dragon-egg.png" class="img-fluid" id="dragon-egg" alt="dragon egg">
+        <img src="images/baby-dragon.png" class="img-top img-fluid" alt="baby dragon">
+    </div>
+
+  			</div>
+			</div>
+		</div>
+	</div>		
+
+	-->

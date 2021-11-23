@@ -1,0 +1,136 @@
+/* our css for project 4 */
+
+/*responsive viewport declaration */
+
+@-ms-viewport {width: device-width;}
+
+@viewport {width: device-width;}
+/* put this in for future conpatibility */
+
+.panel {
+	border-radius: 0.3rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: rgb(0, 0, 0, 0.7);
+	color: ghostwhite;
+}
+
+body {
+  z-index: 0;
+  background-image: url("../images/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+}
+
+/*img caras */
+
+#dragon-egg {
+	max-width: 40%;
+	height: auto;
+	margin: 0 auto;
+
+}
+
+#baby-dragon {
+	max-width: 40%;
+	height: auto;
+	margin: 0 auto;
+}
+
+#dragon-big{
+	max-width: 40%;
+	height: auto;
+	margin: 0 auto;
+}
+/* typography */
+
+h1 {
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 100px;
+	text-align: center;
+
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+	font-size: 30px;
+	text-align: center;
+}
+
+#forest {
+	color: #13affc;
+}
+
+/*links */
+
+.learn-more {
+	text-decoration: none;
+	border-bottom: 1px solid ghostwhite;
+	color: ghostwhite;
+}
+
+.learn-more:hover {
+	color: #13affc;
+}
+
+.form-label{
+	color: ghostwhite;
+}
+
+/*buttons */
+
+#search-button {
+	border-color: #13affc;
+	color: #13affc;
+}
+
+#search-button:hover {
+	background-color: #13affc;
+	color: ghostwhite;
+}
+
+#sign-up {
+	border-color: #13affc;
+	color: #13affc;
+}
+
+#sign-up:hover {
+	background-color: #13affc;
+	color: ghostwhite;
+}
+
+/*
+/*card hover 
+    .card {
+        width: 150px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+       left: 650px;
+       background-color: transparent;
+       border-color: transparent;
+     
+
+            }
+    .card .img-top {
+    	width: 100%;
+    	height: auto;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+    	width: 100%;
+    	height: auto;
+        display: inline;
+    }
+
+    #dragon-egg {
+    	width: 100%;
+    	height: auto;
+    }
+*/
