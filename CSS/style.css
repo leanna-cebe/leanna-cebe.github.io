@@ -1,136 +1,229 @@
-/* our css for project 4 */
+/*CSS file */
 
-/*responsive viewport declaration */
-
-@-ms-viewport {width: device-width;}
-
-@viewport {width: device-width;}
-/* put this in for future conpatibility */
-
-.panel {
-	border-radius: 0.3rem;
-	padding: 1rem;
-	margin-bottom: 1rem;
-	background-color: rgb(0, 0, 0, 0.7);
-	color: ghostwhite;
+/* Floats */
+row {
+    display: flex;
+    flex-direction: row;
 }
+
+/*--------*/
 
 body {
-  z-index: 0;
-  background-image: url("../images/background.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: black;
+	font-family: ;
+	background-image: url(../images/hero-image.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: black;
+	font-weight: ;
 }
 
-/*img caras */
+.white {
+	background-color: white;
+}
 
-#dragon-egg {
-	max-width: 40%;
-	height: auto;
-	margin: 0 auto;
+.red {
+	background-color: red;
+}
+
+
+
+/*** GLOBAL STYLING ***/
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-size: 70px;
+	color: ghostwhite;
+	margin: 30px;
 
 }
 
-#baby-dragon {
-	max-width: 40%;
-	height: auto;
-	margin: 0 auto;
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	color: ghostwhite;
+	font-size: 20px;
+	padding: 70px;
+	text-align: left;
 }
 
-#dragon-big{
-	max-width: 40%;
-	height: auto;
-	margin: 0 auto;
-}
-/* typography */
-
-h1 {
-	font-family: 'Berkshire Swash', cursive;
-	font-size: 100px;
+h3{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	color: ghostwhite;
 	text-align: center;
-
 }
 
-h3 {
-	font-family: 'Poiret One', cursive;
-	font-size: 30px;
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	color: ghostwhite;
+	font-size: 20px;
+	margin: 30px;
+
+}
+/* HEADER STYLING */
+
+header div {
+	height: 50px;
+}
+
+/** HOMEPAGE STYLING **/
+
+
+/* HERO SECTION */
+
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+@media (max-width: 800px) {
+
+   .flex-container {
+   		display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    #cabinet {
+    	margin-left: 20%;
+    }
+}
+
+
+#cabinet {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	padding-top: 50px;
+	width: 300px;
+	height: auto;
+}
+
+/* Misson */
+#mission {
+	display: flex;
+	border: ghostwhite solid 1px;
+	background-color: rgb(255, 255, 255, 0.2);
+	padding: 20px;
+	margin: 50px;
+	margin-left: 130px;
 	text-align: center;
+	justify-content: center;
+
 }
 
-#forest {
-	color: #13affc;
+@media (max-width: 800px) {
+
+   #mission {
+   		display: flex;
+        flex-wrap: wrap;
+        margin-left: 0%;
+
+    }
+
+}
+/* Break */
+/* Feature */
+/* contact */
+
+/*interior page 1 */
+
+/*interior hero */
+
+/* SECTION1 */
+/* SECTION2 */
+
+/** Interior page 2 **/
+
+/* INTERIOR HERO */
+/* SECTION1 */
+/* SECTION2 */
+
+/** PENCIL NO2 PAGE STYLING **/
+
+/** FOOTER STYLING **/
+
+.footer{
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
 }
 
-/*links */
+.container2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  justify-content: space-evenly;
+	text-align: center;
+	padding: 20px;
 
-.learn-more {
+}
+
+.container2 > div {
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
+footer li a {
+
 	text-decoration: none;
-	border-bottom: 1px solid ghostwhite;
-	color: ghostwhite;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	color: black;
+	font-size: 20px;
+
 }
 
-.learn-more:hover {
-	color: #13affc;
+
+footer li a:hover {
+	color: orange;
 }
 
-.form-label{
-	color: ghostwhite;
+footer ul {
+	list-style: none;
 }
 
-/*buttons */
+@media (max-width: 800px) {
 
-#search-button {
-	border-color: #13affc;
-	color: #13affc;
-}
+   .container2 {
+   		display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly ;
+        text-align: center;
 
-#search-button:hover {
-	background-color: #13affc;
-	color: ghostwhite;
-}
 
-#sign-up {
-	border-color: #13affc;
-	color: #13affc;
-}
-
-#sign-up:hover {
-	background-color: #13affc;
-	color: ghostwhite;
-}
-
-/*
-/*card hover 
-    .card {
-        width: 150px;
-        height: 195px;
-        position: relative;
-        display: inline-block;
-        margin: 50px;
-       left: 650px;
-       background-color: transparent;
-       border-color: transparent;
-     
-
-            }
-    .card .img-top {
-    	width: 100%;
-    	height: auto;
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
     }
-    .card:hover .img-top {
-    	width: 100%;
-    	height: auto;
-        display: inline;
+    .footer{
+    	display: flex;
+    	justify-content: space-evenly;
+    	flex-direction: column;
+    	text-align: center;
+    	padding: 5%;
     }
-
-    #dragon-egg {
-    	width: 100%;
-    	height: auto;
-    }
-*/
+}
